@@ -1,0 +1,98 @@
+{
+    "Start function": {
+        "prefix": "start",
+        "body": [
+            "function ${TM_FILENAME_BASE:Foo}:Start()",
+
+            "\t${1:--Runs once when the script starts, doesn't care if the game object is active or not.}",
+            "",
+            "\t${2:print('Hello world!')}",
+            "",
+            "end"
+        ],
+        "description": "Creates a start function that gets called once the script starts."
+    },
+    "Awake function": {
+        "prefix": "awake",
+        "body": [
+            "function ${TM_FILENAME_BASE:Foo}:Awake()",
+            
+            "\t${1:--Runs once when the script starts.}",
+            "",
+            "\t${2:print('Hello world!')}",
+            "",
+            "end"
+        ],
+        "description": "Creates an awake function that gets called once the script starts."
+    },
+    "Update loop": {
+        "prefix": "update",
+        "body": [
+            "function ${TM_FILENAME_BASE:Foo}:Update()",
+            "",
+
+            "\t${1:--Runs every frame.}",
+
+            "",
+            "end"
+        ],
+        "description": "Creates an update function that's called every frame."
+    },
+    "Numeric for": {
+        "prefix": "for",
+        "body": [
+            "for i= 1, 10, 1 do",
+            "",
+
+            "\t${1:--Logic here.}",
+
+            "",
+            "end"
+        ],
+        "description": "Creates a numeric for loop to iterate a value."
+    },
+    "Generic for": {
+        "prefix": "for",
+        "body": [
+            "for key,i in pairs(x) do",
+            "",
+
+            "\t${1:--Logic here.}",
+
+            "",
+            "end"
+        ],
+        "description": "Creates a generic for loop to iterate through objects in a table."
+    },
+    "If statement": {
+        "prefix": "if",
+        "body": [
+            "if foo ~= otherFoo then",
+            "",
+
+            "\t${1:--Logic here.}",
+
+            "",
+            "end"
+        ],
+        "description": "Creates an if statement."
+    },
+    "Function": {
+        "prefix": "function",
+        "body": [
+            "function ${TM_FILENAME_BASE:Foo}:${1:Foo}()",
+            "",
+            "",
+            "",
+            "end"
+        ],
+        "description": "Creates a function."
+    },
+    "GameObject.Destroy": {
+        "prefix": "gameobject",
+        "body": [
+            "GameObject.Destroy(${1:type})"
+        ],
+        "description": "Function to destory specified type"
+    }
+}
