@@ -2,7 +2,7 @@
     "name": "rssnippets",
     "displayName": "Ravenscript Snippets",
     "description": "A set of snippets to help with coding in Ravenscript.",
-    "version": "1.6.0",
+    "version": "1.8.0",
     "publisher": "EaglePancake",
     "repository": {
         "type": "git",
@@ -22,12 +22,5 @@
                 "path": "./snippets/snippets.json"
             }
         ]
-    },
-    "capabilities" : {
-        "completionProvider" : {
-            "resolveProvider": "true",
-            "triggerCharacters": [ "." ]
-        }
-        
     }
 }
