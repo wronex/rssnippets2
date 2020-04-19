@@ -1,23 +1,26 @@
 # Ravenscript Snippets
 
-This is an unoffical extension made by a fellow modder.
+This is an unoffical extension made by a fellow modder from the Ravenfield Community.
 
-This extension comes with a pack of snippets to help with development time
+This extension comes with a pack of snippets to help with development time.
 
 ## List of current snippets:
 
  - Start
  - Update
+ - Awake
  - Generic for
  - Numerical for
  - If
+ - Function
 
-## Example:
+----------------------------------------------------------------------------------------------
 
-[image\](images/start.png\)
+### 1.6.0
 
+Added function and awake snippets.
 
-### 1.1.0
+#### 1.4.0
 
 Added, 
 
@@ -27,11 +30,9 @@ Added,
 
 snippets.
 
-### 1.0.0
+##### 1.0.0
 
 Initial release of Ravenscript Snippets.
 
 
-The thumbnail was made by iwanPlays.
-
-**Enjoy!**
+***Enjoy!**
