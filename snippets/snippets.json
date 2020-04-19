@@ -93,6 +93,118 @@
         "body": [
             "GameObject.Destroy(${1:type})"
         ],
-        "description": "Function to destory specified type"
+        "description": "Function to destory specified type."
+    },
+    "GameObject.Instantiate": {
+        "prefix": "gameobject",
+        "body": [
+            "GameObject.Instantiate(${1:type})"
+        ],
+        "description": "Function to instantiate specified type."
+    },
+    "Ref GameObject.Instantiate": {
+        "prefix": "refgameobject",
+        "body": [
+            "local ${1:object} = GameObject.Instantiate(${2:type})"
+        ],
+        "description": "Function to instantiate specified type and store it in an object."
+    },
+    "ActorManager": {
+        "prefix": "actormanager",
+        "body": [
+            "ActorManager"
+        ],
+        "description": "ActorManager class base."
+    },
+    "Player 1": {
+        "prefix": "player1",
+        "body": [
+            "Player.actor"
+        ],
+        "description": "Player actor from Player class."
+    },
+    "Player 2": {
+        "prefix": "player2",
+        "body": [
+            "ActorManager.player"
+        ],
+        "description": "Player actor from ActorManager class."
+    },
+    "Player Camera": {
+        "prefix": "player camera",
+        "body": [
+            "PlayerCamera"
+        ],
+        "description": "PlayerCamera class"
+    },
+    "Active Weapon": {
+        "prefix": "weapon",
+        "body": [
+            "PlayerCamera"
+        ],
+        "description": "Returns actors equipped weapon."
+    },
+    "Behaviour weapon": {
+        "prefix": "weapon",
+        "body": [
+            "self.${1:weapon} = self.gameObject.GetComponent(Weapon)"
+        ],
+        "description": "Returns the weapon component sitting on the behaviours gameobject."
+    },
+    "GetComponent": {
+        "prefix": "component",
+        "body": [
+            "object.GetComponent(${1:type})"
+        ],
+        "description": "Returns wanted component if it exists."
+    },
+    "Vector3.Lerp": {
+        "prefix": "vector3.lerp",
+        "body": [
+            "Vector3.Lerp(x, y, t)"
+        ],
+        "description": "Lerps vector from 'x' to 'y' by 't'."
+    },
+    "Ray": {
+        "prefix": "raycast",
+        "body": [
+            "Ray(origin, direction)"
+        ],
+        "description": "Creates a ray."
+    },
+    "Eagle": {
+        "prefix": "eagle",
+        "body": [
+            "Team.Blue"
+        ],
+        "description": "Returns Eagles(blue)."
+    },
+    "Raven": {
+        "prefix": "raven",
+        "body": [
+            "Team.Red"
+        ],
+        "description": "Returns Ravens(red)."
+    },
+    "Spectator": {
+        "prefix": "speactator",
+        "body": [
+            "Team.Neutral"
+        ],
+        "description": "Returns Spectator(grey)."
+    },
+    "Player Team": {
+        "prefix": "player team",
+        "body": [
+            "Player.team"
+        ],
+        "description": "Returns player team."
+    },
+    "Enemy Team": {
+        "prefix": "enemy team",
+        "body": [
+            "Player.enemyTeam"
+        ],
+        "description": "Returns player team."
     }
 }
